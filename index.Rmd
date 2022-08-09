@@ -9,12 +9,9 @@ site: distill::distill_website
 knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
 ```
-
-
 ```{r}
 ec <- read_rds("ec.rds")
 ```
-
 
 ```{r}
 # Look at missing data later.
@@ -30,8 +27,8 @@ ec |>
          x = "Population",
          title = "Economic Connectedness and Population in US Counties",
          subtitle = "There is no relationship between population and economic connectedness in US counties.")
-  
 ```
+
 
 
 
@@ -51,6 +48,4 @@ ec |>
          x = "State Population",
          title = "Economic Connectedness and Population in US States",
          subtitle = "Biggger states have counties with lower average economic connectedness.")
-
-
 ```
